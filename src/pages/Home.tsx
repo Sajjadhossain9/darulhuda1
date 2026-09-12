@@ -246,8 +246,8 @@ export default function Home() {
           <div className="rounded-3xl border-2 border-amber-300/50 bg-gradient-to-br from-amber-50 to-emerald-50 p-8 shadow-xl dark:border-amber-700/40 dark:from-slate-800 dark:to-slate-900">
             <div className="text-5xl">📜</div>
             <h3 className="mt-3 text-xl font-bold text-emerald-900 dark:text-emerald-200">{t.sections.muhtamimTitle}</h3>
-            <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">"{t.contact.muhtamimName}"</p>
-            <p className="mt-4 text-sm italic text-slate-700 dark:text-slate-200">"{t.tagline}"</p>
+            <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">{lang === "bn" ? "মুফতি আব্দুর রাজ্জাক (রেজাউল)" : t.contact.muhtamimName}</p>
+            <p className="mt-4 text-sm italic text-slate-700 dark:text-slate-200">"{lang === "bn" ? "ইসলামি ও জেনারেল শিক্ষার সমন্বিত কারিকুলামে পরিচালিত ইলম, আমল ও আখলাকের যুগোপযোগী প্রতিষ্ঠান" : t.tagline}"</p>
           </div>
         </div>
       </section>
