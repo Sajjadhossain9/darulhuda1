@@ -1,4 +1,5 @@
 import { useState } from "react";
+import logoImg from "../assets/logo.png";
 import { useApp } from "../context";
 import { LANG_LABELS, type Lang } from "../i18n";
 
@@ -17,7 +18,7 @@ export default function Navbar() {
         {/* Logo */}
         <button onClick={() => setPage("home")} className="flex items-center gap-2 group">
           <img
-            src="/image/logo.png"
+            src={logoImg}
             alt="Madrasah Darul Huda Logo"
             className="h-11 w-11 rounded-full object-cover shadow-md transition-transform group-hover:scale-110"
             onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
