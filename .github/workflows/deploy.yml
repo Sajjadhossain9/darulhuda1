@@ -24,7 +24,7 @@ jobs:
           node-version: "22"
           cache: npm
       - run: npm ci
-      - run: npm run build -- --base=/darulhuda1/
+      - run: npm run build -- --base=./
       - name: Verify production entry point
         run: |
           test -s dist/index.html
